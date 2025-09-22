@@ -4,7 +4,7 @@ import 'package:flappy_bird/Routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'Layouts/Pages/page_start_screen.dart';
+import 'Layouts/Pages/page_game.dart';
 import 'Resources/strings.dart';
 
 void main() async {
@@ -23,7 +23,7 @@ class MainApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
-      home: StartScreen(),
+      home: GamePage(),
       debugShowCheckedModeBanner: false,
       initialRoute: Str.home,
       onGenerateRoute: AppRoute().generateRoute,
